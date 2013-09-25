@@ -26,6 +26,7 @@ while 1:
             sys.exit()
         elif event.type == KEYDOWN:
             if event.key == K_ESCAPE:
+                sys.exit()
                 pygame.quit()
                 
     redrect = redrect.move(redspeed)
