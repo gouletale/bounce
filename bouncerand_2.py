@@ -2,9 +2,20 @@ import sys, pygame, random
 from pygame.locals import *
 pygame.init()
 
-redspeed = [10, 10]
-pingspeed = [5, 5]
-pacspeed = [15, 15]
+a = random.randint(1, 25)
+b = random.randint(1, 25)
+c = random.randint(1, 25)
+d = random.randint(1, 25)
+e = random.randint(1, 25)
+f = random.randint(1, 25)
+
+redspeed = [a, b]
+pingspeed = [c, d]
+pacspeed = [e, f]
+
+#redspeed = [random.randint [1, 20]]
+#pingspeed = [1, 20]
+#pacspeed = [1, 20]
 black = 0, 0, 0
 
 red = pygame.image.load("red.png")
