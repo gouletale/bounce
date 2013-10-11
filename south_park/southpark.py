@@ -4,7 +4,7 @@ import stuff.py
 from pygame.locals import *
 pygame.init()
 
-images = ["stan.psd", "kyle.psd", "cartman.psd"]
+images = ["stan.psd", "kyle.psd", "cartman.psd", "kenny.psd"]
 
 list_of_stuff = []
 a = random.randint(1, 15)
@@ -44,7 +44,7 @@ for image in images:
     stuff = Stuff(image, random.randint(1,15), random.randint(1,15))
     list_of_stuff.append(stuff)
     
-    
+
 
         
 while 1:
