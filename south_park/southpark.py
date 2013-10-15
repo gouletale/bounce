@@ -1,6 +1,6 @@
 import sys, pygame, random
-import kenny.py
-import stuff.py
+from kenny import *
+from stuff import *
 from pygame.locals import *
 pygame.init()
 
