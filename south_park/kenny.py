@@ -1,7 +1,8 @@
-from stuff import *
 from southpark import *
+a = random.randint(1, 15)
+b = random.randint(1, 15)
 
-class Kenny(Stuff):
+class kenny_class(Stuff):
 
 
     
@@ -23,8 +24,11 @@ class Kenny(Stuff):
             
             self.image = self.kennyImages[i]
             self.i += 1
-            self.setup()
-
+            #self.setup()
+            print self.image
+            self.stuff = pygame.image.load(self.image)
+            self.stuffrect = self.stuff.get_rect()
+        
         if self.stuffrect.top < 0 or self.stuffrect.bottom > height:
             self.speed[1] = -self.speed[1]
             #Select next image in list
