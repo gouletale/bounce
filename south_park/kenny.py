@@ -3,16 +3,17 @@ from southpark import *
 
 class Kenny(Stuff):
 
-    self.kennyImages = ["1.psd", "2.psd", "3.psd", "4.psd", "5.psd", "6.psd", "7.psd", "8.psd", "9.psd", "10.psd"]
-    self.i = 0
+
     
     def __init__(self, image, a, b):
+        self.kennyImages = ["1.psd", "2.psd", "3.psd", "4.psd", "5.psd", "6.psd", "7.psd", "8.psd", "9.psd", "10.psd"]
+        self.i = 0
         self.speed = [a, b]
         self.image = image
         self.stuff = None
         self.stuffrect = None
         
-        self.setup(self.kennyImages)
+        self.setup()
     
     def update(self):
         self.stuffrect = self.stuffrect.move(self.speed)
