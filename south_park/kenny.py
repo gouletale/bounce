@@ -19,7 +19,7 @@ class kenny_class(Stuff):
         self.image = self.kennyImages[self.i]
         self.i += 1
         #self.setup()
-        print self.image
+        #print self.image
 
         self.stuff = pygame.image.load(self.image)
     
@@ -41,7 +41,6 @@ class kenny_class(Stuff):
             
             if self.i != (len(self.kennyImages)):
                 self.change_kenny_image()
-                
         
             
             

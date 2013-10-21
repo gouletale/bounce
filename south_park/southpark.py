@@ -7,6 +7,8 @@ pygame.init()
 images = ["stan.psd", "kyle.psd", "cartman.psd"]
 kenny_image = "kenny.psd"
 
+arm = "arm.psd"
+
 list_of_stuff = []
 a = random.randint(1, 15)
 b = random.randint(1, 15)
@@ -20,7 +22,6 @@ for image in images:
     stuff = Stuff(image, random.randint(1,15), random.randint(1,15))
     list_of_stuff.append(stuff)
 kenny_image_as_class = kenny_class(kenny_image, random.randint(1,15), random.randint(1,15))
-    
 
 
         
@@ -33,6 +34,9 @@ while 1:
             if event.key == K_ESCAPE:
                 sys.exit()
                 pygame.quit()
+    if kenny_image_as_class() = kennyImages(dead.psd)
+        arm
+    
                 
 
     screen.fill(black)
