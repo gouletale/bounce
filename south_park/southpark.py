@@ -34,8 +34,10 @@ while 1:
             if event.key == K_ESCAPE:
                 sys.exit()
                 pygame.quit()
-    if kenny_image_as_class() = kennyImages(dead.psd)
-        arm
+    if kenny_image_as_class.image == "dead.psd":
+        kennyArm = Stuff(arm, random.randint(1, 15), random.randint(1, 15))
+        list_of_stuff.append(kennyArm)
+#        print "true"
     
                 
 
