@@ -6,8 +6,8 @@ pygame.init()
 
 images = ["stan.psd", "kyle.psd", "cartman.psd"]
 kenny_image = "kenny.psd"
-
 arm = "arm.psd"
+kennyArm = None
 
 list_of_stuff = []
 a = random.randint(1, 15)
@@ -34,10 +34,7 @@ while 1:
             if event.key == K_ESCAPE:
                 sys.exit()
                 pygame.quit()
-    if kenny_image_as_class.image == "dead.psd":
-        kennyArm = Stuff(arm, random.randint(1, 15), random.randint(1, 15))
-        list_of_stuff.append(kennyArm)
-#        print "true"
+
     
                 
 
@@ -47,6 +44,14 @@ while 1:
         stuff.render(screen)
     
     kenny_image_as_class.update()
+    
+    if kenny_image_as_class.image == "dead.psd":
+        if kennyArm not in list_of_stuff:
+            kennyArm = Stuff(arm, random.randint(1, 15), random.randint(1, 15))
+            list_of_stuff.append(kennyArm)
+#        print "true"
+
     kenny_image_as_class.render(screen)
     pygame.display.flip()
+    
     

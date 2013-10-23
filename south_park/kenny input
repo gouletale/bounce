@@ -1,0 +1,7 @@
+entry = Entry(entryCenterPt, entryWidth)
+    entry.setText(initialStr)
+    entry.draw(win)
+    labelCenter = entryCenterPt.clone()
+    labelCenter.move(0, 30)
+    Text(labelCenter,labelText).draw(win)
+    return entry
