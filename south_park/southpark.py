@@ -9,6 +9,8 @@ kenny_image = "kenny.psd"
 arm = "arm.psd"
 kennyArm = None
 
+pos = None
+
 list_of_stuff = []
 a = random.randint(1, 15)
 b = random.randint(1, 15)
@@ -48,8 +50,9 @@ while 1:
     if kenny_image_as_class.image == "dead.psd":
         if kennyArm not in list_of_stuff:
             kennyArm = Stuff(arm, random.randint(1, 15), random.randint(1, 15))
+            kennArm.pos = "dead.psd".pos
             list_of_stuff.append(kennyArm)
-#        print "true"
+#        print "true" http://stackoverflow.com/questions/7145780/pycairo-how-to-resize-and-position-an-image
 
     kenny_image_as_class.render(screen)
     pygame.display.flip()
